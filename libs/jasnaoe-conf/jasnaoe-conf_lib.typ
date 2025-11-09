@@ -6,7 +6,7 @@
 // #let mincho = ("Times New Roman", "IPAMincho")
 // #let gothic = ("Times New Roman", "IPAGothic")
 // #let mincho = ("Times New Roman", "MS Mincho", "IPAMincho")
-// #let gothic = ("Times New Roman", "MS Gothic", "IPAGothic")
+// #let gothic = ("Times New Roman", gothic, "IPAGothic")
 
 #let jasnaoe-conf(
   title: none,
@@ -27,14 +27,11 @@
 
   set text(
     size: 9pt,
-    font: mincho,
+    font: "MS mincho",
   )
   set par(
     leading: 1.00em,
-    first-line-indent: (
-      amount: 1.00em,
-      all: true,
-    ),
+    first-line-indent: 1em,
     justify: true,
   )
 
@@ -63,7 +60,7 @@
       #set par(first-line-indent: 0pt)
       #let is-ack = it.body in ([謝辞], [謝　辞], [謝　　辞], [Acknowledgement])
       #set align(center)
-      #set text(size: 10pt, font: gothic, weight: "bold")
+      #set text(size: 10pt, font: "MS Gothic", weight: "bold")
       // #v(9pt, weak: true)
       #if it.numbering != none and not is-ack {
         numbering("1.", ..levels)
@@ -75,7 +72,7 @@
       // The other level headings are run-ins.
       #v(9pt)
       #set par(first-line-indent: 0pt)
-      #set text(size: 9pt, font: gothic, weight: "bold")
+      #set text(size: 9pt, font: "MS Gothic", weight: "bold")
       #if it.numbering != none {
         numbering("1.1", ..levels)
         h(8pt, weak: true)
