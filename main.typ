@@ -8,8 +8,8 @@
 //以下、申込に必要な最低限の情報です。
 //本文には反映されませんが、共著者間でのレビュー時に必要かと思います。
 /*
-論文タイトル(日本語): 仮置きを考慮した
-Paper Title(English): Let's write a conference paper with Typst -What's wrong with creating a template on our own!!-
+論文タイトル(日本語): ネットワーク最適化モデルを用いた仮置きを含む浮体式洋上風車サプライチェーンの設計
+Paper Title(English): Design of a FOWT supply chain with wet-storage using a network optimization model
 著者1(名前(日本語)、名前(英語), 所属(日本語), 会員種別): 下澤貴弘, Takahiro Shimozawa, 横浜国立大学, 先進実践学環
 
 要旨(日本語300字程度、英語150words程度):
